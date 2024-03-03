@@ -4,7 +4,7 @@
 ### Tips
 
 - Primitive Date types
-
+    - String are immutable - cannot be changed onced stored
 
     
 

@@ -36,4 +36,4 @@
     - A or B
     - not A
 
-### Note: 
+
