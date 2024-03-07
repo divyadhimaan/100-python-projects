@@ -4,10 +4,10 @@ Structured as a self-guided expedition, the repository is meticulously crafted t
 
 Within this repository, you'll find:
 
-Daily Lessons: Thoroughly researched explanations and practical examples that demystify Python fundamentals, enabling me to grasp core concepts with clarity and confidence.
+- Daily Lessons: Thoroughly researched explanations and practical examples that demystify Python fundamentals, enabling me to grasp core concepts with clarity and confidence.
 
-Mini-Projects: Bite-sized coding challenges and mini-projects carefully designed to reinforce learning objectives and ignite creativity, allowing me to apply newfound knowledge in practical scenarios.
+- Mini-Projects: Bite-sized coding challenges and mini-projects carefully designed to reinforce learning objectives and ignite creativity, allowing me to apply newfound knowledge in practical scenarios.
 
-Full-scale Projects: Ambitious undertakings that put my skills to the test, pushing me to think critically, problem-solve effectively, and develop robust solutions to real-world problems.
+- Full-scale Projects: Ambitious undertakings that put my skills to the test, pushing me to think critically, problem-solve effectively, and develop robust solutions to real-world problems.
 
-Supplementary Resources: A curated collection of additional materials, articles, and external references that serve as guideposts on this journey, offering deeper insights and alternative perspectives on Python programming.
+- Supplementary Resources: A curated collection of additional materials, articles, and external references that serve as guideposts on this journey, offering deeper insights and alternative perspectives on Python programming.
