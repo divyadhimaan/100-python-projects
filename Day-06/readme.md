@@ -1,5 +1,6 @@
 
 ## Python Functions
+Checkout this amazing website to practice: [here](https://reeborg.ca/reeborg.html)
 
 ### Tips
 - Functions
@@ -17,8 +18,6 @@
     while something_is_true:
         # do something repeatedly
     ```
-
-        
 
 
 ### Note: 
