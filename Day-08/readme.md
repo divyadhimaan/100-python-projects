@@ -40,7 +40,3 @@
         my_func(b=2,a=1,c=3)
         ```
 
-### Note: 
-
-- For built in functions, click [here](https://docs.python.org/3/library/functions.html)
-- Always test carefully for infinite loops
