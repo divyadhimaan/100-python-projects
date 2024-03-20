@@ -4,11 +4,12 @@ import random
 from replit import clear
 
 def pick_data():
+    """Pick data from game data."""
     return random.choice(data)
     
 def format_data(item):
     name = item["name"]
-    description = item["description"]    
+    description = item["description"]  
     country = item["country"]
     return f"{name}, a {description}, from {country}."
     
@@ -38,8 +39,7 @@ def play(item_1, score):
 
     # ask for guess and check it
     guess = input("Who has more followers? Type 'A' or 'B':")
-    is_correct_ans = check_guess(item_1, item_2, guess)
-    
+    is_correct_ans = check_guess(item_1, item_2, guess) 
     if is_correct_ans:
         clear()
         score += 1
