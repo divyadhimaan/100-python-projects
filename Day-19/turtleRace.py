@@ -35,8 +35,10 @@ while is_race_on:
         
 
 for turtle in all_turtles:
-    if turtle.pencolor() != winning_color:
+    screen.bgcolor(winning_color)
+    if turtle.pencolor() == winning_color:
         turtle.color("black")
+    
 
         
     
