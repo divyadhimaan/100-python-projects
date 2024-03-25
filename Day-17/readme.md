@@ -29,7 +29,7 @@
     my_class = MyClass(12)     
     ```
 
-- Methods: 
+- Methods: functions associated with class
 
 ### Note: 
 - Name of the class is usually in PascalCase notation
