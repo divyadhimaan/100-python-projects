@@ -6,15 +6,18 @@ UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
+LEVEL = ["slow","normal","fast","fastest"]
+
 
 class Snake:
     
     def __init__(self):
         self.segments = []
-        self.create_snake()
-        
+        self.create_snake()       
         self.head = self.segments[0]
         self.tail = self.segments[-1]
+        
+        self.level = 0
         
     def create_snake(self):
         """Create a snake and initialize it to home position"""
@@ -26,7 +29,7 @@ class Snake:
         """Add segment to snake"""
         new_segment = Turtle(shape="square")
         new_segment.color("white")
-        new_segment.speed("fast")
+        new_segment.speed("slowest")
         new_segment.penup()
         new_segment.goto(position)
         self.segments.append(new_segment)
@@ -51,6 +54,11 @@ class Snake:
         """Resetting all settings for snake"""
         self.__init__()
         
+    def change_level(self):
+        self.level += 1
+        print(f"Changing Level to {self.level} and speed to {LEVEL[self.level]}")
+        for segment in self.segments:
+            segment.speed(LEVEL[self.level])
         
     # Controlling snake 
     def up(self):

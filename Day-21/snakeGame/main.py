@@ -1,4 +1,4 @@
-from turtle import Screen, Turtle
+from turtle import Screen
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
@@ -43,6 +43,9 @@ while game_is_on:
         food.refresh()
         snake.extend()
         scoreboard.update_score()
+        #changing speed based on score
+        if scoreboard.score in [6, 12, 18]:
+            snake.change_level()
         
     # detect collision with wall
     x_cor = snake.head.xcor()
@@ -51,12 +54,11 @@ while game_is_on:
         game_is_on = False
         scoreboard.game_over()
         
-    # detect collision with tail - head collides with any segment in tail
-    for segment in snake.segments:
-        if segment != snake.head:
-            if snake.head.distance(segment) < 10:
-                game_is_on = False
-                scoreboard.game_over()
+    # detect collision with tail - head collides with any segment in tail exclude the head
+    for segment in snake.segments[1:]:
+        if snake.head.distance(segment) < 10:
+            game_is_on = False
+            scoreboard.game_over()
                     
     # time.sleep(10)
     # user_input_to_play = screen.textinput(title="Snake Game", prompt="Do you want to continue playing? Type y/n: ")
