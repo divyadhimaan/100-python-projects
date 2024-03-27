@@ -9,7 +9,6 @@ class Scoreboard(Turtle):
         super().__init__()
         self.clear()
         self.score = 0
-        # self.best_score = 0
         self.penup()
         self.goto(0,270)
         self.color("white")
@@ -22,13 +21,7 @@ class Scoreboard(Turtle):
     
     def game_over(self):
         self.goto(0,0)
-        # if self.score > self.best_score:
-        #     self.best_score = self.score
         self.write(f"GAME OVER.", align=ALIGNMENT, font=FONT)
-        # self.goto(0,-30)
-        # self.write(f"Best Score: {self.best_score}", align=ALIGNMENT, font=FONT)
-        # time.sleep(10)
-        
             
         
         

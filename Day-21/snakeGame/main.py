@@ -26,9 +26,7 @@ screen.onkey(snake.down,"Down")
 screen.onkey(snake.left, "Left")
 screen.onkey(snake.right, "Right")
 
-# continue_playing = True
 
-# while continue_playing:
     
 # Moving Snake
 game_is_on = True
@@ -59,13 +57,6 @@ while game_is_on:
         if snake.head.distance(segment) < 10:
             game_is_on = False
             scoreboard.game_over()
-                    
-    # time.sleep(10)
-    # user_input_to_play = screen.textinput(title="Snake Game", prompt="Do you want to continue playing? Type y/n: ")
-    # if user_input_to_play == 'n':
-    #     continue_playing = False
-    # elif user_input_to_play == 'y':
-    #     scoreboard.reset()
-    #     snake.reset()
+
     
 screen.exitonclick()

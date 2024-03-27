@@ -21,5 +21,6 @@
     piano_keys[2:5]
     ```
 
-### Note: 
-- 
+### Snake Game
+
+The Snake game is an iconic arcade-style classic where players guide a snake that elongates upon consuming scattered food items throughout the game board. In this Python rendition of Snake, players maneuver the snake using arrow keys or alternative input methods, evading collisions with walls and the snake's own body. As the snake devours food, it lengthens, intensifying the challenge of navigation. With its simplistic visuals and captivating gameplay, this Python iteration offers a reminiscent experience akin to early mobile phone games. With straightforward controls and escalating difficulty levels, the Snake game promises endless amusement for players of all ages.
