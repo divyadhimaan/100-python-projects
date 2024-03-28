@@ -25,4 +25,4 @@
 
     
 ### Notes
-- If you open a file with "w" mode and it doesn't exist, It will be created
+- If you open a file with "w" mode and it doesnot exist, It will be created
