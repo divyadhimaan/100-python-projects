@@ -44,6 +44,7 @@ while len(guessed_states) < 28:
         tim.write(state_data.state.item())
 
 
+screen.exitonclick()
 
 
 
