@@ -1,0 +1,8 @@
+gmail | divya@gmail.com | test
+gmail; | divya@gmail.com | test123
+gmail | divya@gmail.com | test
+gmail | divya@gmail.com | test`123
+mail | divya@gmail.com | test
+gmail | divya@gmail.com | 
+gmail | divya@gmail.com | L6!q*zVE24&q2j!
+gmail | divya@gmail.com | 3Omb#FqB&&7+
