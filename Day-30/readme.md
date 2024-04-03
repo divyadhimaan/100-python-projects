@@ -30,6 +30,7 @@
     - Write: json.dump() -> dict to json
     - Read: json.load() -> json to dict
     - Update: json.update()
+- Refer [here](https://docs.python.org/3/library/json.html#module-json) for json documentation
 
 ## Nato Phonetics
 
