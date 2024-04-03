@@ -1,6 +1,7 @@
 from tkinter import *
 import pyperclip
 from tkinter import messagebox
+import time
 from random import choice, randint, shuffle
 PATH_TO_IMG = "100-python-projects/Day-29/passwordManager/logo.png"
 PATH_TO_FILE = "100-python-projects/Day-29/passwordManager/data.txt"
@@ -45,7 +46,7 @@ def save():
                 website_input.delete(0, END)
                 password_input.delete(0, END)
                 website_input.focus()
-            
+            time.sleep(2)
             messagebox.showinfo(title="Saving", message="Credentials saved successfully.")
 
 
