@@ -1,10 +1,13 @@
 import smtplib
+from dotenv import load_dotenv
+import os
 
-my_email = "divya.test.3424@gmail.com"
-my_password = "Test@123"
+load_dotenv()
 
-connection = smtplib.SMTP("smtp.gmail.com")
-connection.starttls() #makes connection secure
-connection.login(my_email, my_password)
-connection.sendmail(from_addr=my_email, to_addr="divya_test_3424@yahoo.com", message="Hello")
-connection.close()
+my_email = os.getenv('MY_GOOGLE_EMAIL')
+my_password = os.getenv('MY_GOOGLE_PASSWORD')
+
+with smtplib.SMTP("smtp.gmail.com") as connection:
+    connection.starttls() #makes connection secure
+    connection.login(my_email, my_password)
+    connection.sendmail(from_addr=my_email, to_addr="divya_test_3424@yahoo.com", message="Hello")
