@@ -11,7 +11,7 @@
 - TLS: Transport Layer security -> message encryption on transport layer, makes connection secure
 
 
-- datetime: module for date formatting
+- datetime: module for date formatting. refer [here](https://docs.python.org/3/library/datetime.html) for documentation
 
 - How Email Works:
     

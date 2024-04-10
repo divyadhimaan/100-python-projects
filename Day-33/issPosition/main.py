@@ -8,11 +8,17 @@ import time
 
 load_dotenv()
 my_email = os.getenv('MY_GOOGLE_EMAIL')
-my_password = os.getenv('MY_GOOGLE_PASSWORD')
+my_password = os.getenv('MY_GOOGLE_APP_PASSWORD')
 
 MY_LAT = 12.971599
 MY_LONG = 77.594566
 
+# Email message with headers
+email_message = """From: {}
+To: {}
+Subject: ISS Spotting
+
+The ISS is above you in the sky""".format(my_email, my_email)
 
 def is_iss_in_range():
     
@@ -60,11 +66,15 @@ def is_night():
 while True:
     time.sleep(60)
     if is_iss_in_range() and is_night():
-        connection= smtplib.SMTP("smtp.gmail.com")
-        connection.starttls()
-        connection.login(my_email,my_password)
-        connection.sendmail(
-            from_addr=my_email,
-            to_addrs=my_email,
-            msg="Subject:Look Up\n The ISS is above you in the sky"
-    )
+        try:
+            with smtplib.SMTP("smtp.gmail.com", 587) as connection:
+                connection.starttls()  # Encrypts the email
+                connection.login(user=my_email, password=my_password)
+                connection.sendmail(
+                    from_addr=my_email,
+                    to_addrs=my_email,
+                    msg=email_message
+                )
+            print("Email sent successfully!")
+        except Exception as e:
+            print(f"Failed to send email. Error: {e}")
